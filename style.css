@@ -1,0 +1,124 @@
+@font-face {
+    font-family: 'Product Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+}
+
+* {
+    font-family: 'Product Sans';
+
+}
+
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #121212;
+    /* Dark background color for the body */
+    color: #fff;
+    /* Text color */
+}
+
+.card {
+    width: 300px;
+    background-color: #333;
+    /* Darker background color for the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px 20px 10px 20px;
+    margin: 20px;
+}
+
+.search {
+    margin-bottom: 20px;
+}
+
+#searchInput {
+    font-size: large;
+    width: 65%;
+    padding: 8px;
+    border: 1px solid #555;
+    /* Darker border color */
+    border-radius: 4px;
+    background-color: #444;
+    /* Darker background color for the input */
+    color: #fff;
+    /* Text color for the input */
+}
+
+button {
+    font-size: large;
+    padding: 8px 12px;
+    background-color: #3f5092;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2d50c2;
+}
+
+.weather {
+    text-align: center;
+}
+
+.temp {
+    font-size: 36px;
+    margin: 0;
+}
+
+.city {
+    font-size: 24px;
+    margin-top: 5px;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.col {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+}
+
+.col div {
+    background-color: #555;
+    /* Darker background color for the details */
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.humidity,
+.wind {
+    font-size: 16px;
+    margin: 0;
+}
+
+/* Responsive design */
+@media screen and (max-width: 600px) {
+    .card {
+        width: 75%;
+    }
+
+    #searchInput {
+        width: 63%;
+
+    }
+}
+
+
+.weather {
+    display: none;
+}
+
+
+.error {
+    display: none;
+}
