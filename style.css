@@ -16,16 +16,14 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: #121212;
-    /* Dark background color for the body */
+    background: url(./aesthetic-cloud-background.jpg) no-repeat center;
+    background-size: cover;
     color: #fff;
-    /* Text color */
 }
 
 .card {
     width: 300px;
-    background-color: #333;
-    /* Darker background color for the card */
+    background-color: #151515;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     padding: 20px 20px 10px 20px;
@@ -41,12 +39,9 @@ body {
     width: 65%;
     padding: 8px;
     border: 1px solid #555;
-    /* Darker border color */
     border-radius: 4px;
-    background-color: #444;
-    /* Darker background color for the input */
-    color: #fff;
-    /* Text color for the input */
+    background-color: #fff;
+    color: #151515;
 }
 
 button {
@@ -90,7 +85,6 @@ button:hover {
 
 .col div {
     background-color: #555;
-    /* Darker background color for the details */
     border-radius: 4px;
     padding: 10px;
 }
